@@ -11,7 +11,7 @@ st.write("Versi scikit-learn:", sklearn.__version__)
 
 
 st.write("""
-# Adaptability Prediction in Online Education Dashboard
+# Adaptability Prediction in Online Education Dashboarda
 
 This dashboard created by : [@fitrirachmawati](https://www.linkedin.com/in/fitrirachmawati1004/)
          
