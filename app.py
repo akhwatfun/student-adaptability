@@ -8,21 +8,6 @@ from PIL import Image
 st.set_page_config(page_title="Students Adaptability Level in Online Education", layout="wide")
 
 
-
-st.write("""
-# Adaptability Prediction in Online Education Dashboard
-
-This dashboard created by : [@fitrirachmawati](https://www.linkedin.com/in/fitrirachmawati1004/)
-         
-This app is to predict the level of student adaptability in online education. 
-This application can assist users (in this case, educators or educational administrators) 
-in predicting to what extent a student can adapt to the online learning environment based on various input features or factors.
-""")
-
-# Sidebar inputs
-st.sidebar.header('Input Features')
-uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
-
 def user_input_features():
     st.sidebar.header('Input Manual')
     gender = st.sidebar.selectbox('Gender', ['Boy', 'Girl'])
@@ -98,6 +83,20 @@ def user_input_features():
     features = pd.DataFrame(data, index=[0])
     return features
 
+def run():
+    st.write("""
+    # Adaptability Prediction in Online Education Dashboard
+    This dashboard created by : [@fitrirachmawati](https://www.linkedin.com/in/fitrirachmawati1004/)
+    
+    This app is to predict the level of student adaptability in online education. 
+    This application can assist users (in this case, educators or educational administrators) 
+    in predicting to what extent a student can adapt to the online learning environment based on various input features or factors.
+    """)
+
+# Sidebar inputs
+st.sidebar.header('Input Features')
+uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
+
 if uploaded_file is None:
     input_df = user_input_features()
 else:
@@ -158,3 +157,6 @@ if st.sidebar.button('Predict!'):
    with st.spinner('Wait for it...'):
        time.sleep(4)
        st.success(f"Prediction of this app is {output}")
+
+if __name__ == "__main__" :
+   run()
