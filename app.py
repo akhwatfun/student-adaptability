@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import pickle
 import time
-import sklearn
 from PIL import Image
 
 
