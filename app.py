@@ -149,7 +149,7 @@ def run():
     if st.sidebar.button('Predict!'):
         df = input_df
         st.write(df)
-        loaded_model = pickle.load(open('best_model_logreg.pkl', 'rb'))
+        loaded_model = pickle.load(open('best_model_logreg_new.pkl', 'rb'))
         prediction = loaded_model.predict(df)  
         result = ['Cannot Adaptive' if prediction == 0 else 'Yes Can Adaptive']
         st.subheader('Prediction: ')
