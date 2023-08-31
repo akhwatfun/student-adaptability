@@ -4,6 +4,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 import time
+import scikit-learn
 from PIL import Image
 
 
