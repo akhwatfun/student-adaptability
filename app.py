@@ -7,7 +7,7 @@ from PIL import Image
 
 
 st.set_page_config(page_title="Students Adaptability Level in Online Education", layout="wide")
-
+st.write("Versi scikit-learn:", sklearn.__version__)
 
 
 st.write("""
@@ -19,7 +19,7 @@ This app is to predict the level of student adaptability in online education.
 This application can assist users (in this case, educators or educational administrators) 
 in predicting to what extent a student can adapt to the online learning environment based on various input features or factors.
 """)
-st.write("Versi scikit-learn:", sklearn.__version__)
+
 
 # Sidebar inputs
 st.sidebar.header('Input Features')
