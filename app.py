@@ -7,11 +7,10 @@ from PIL import Image
 
 
 st.set_page_config(page_title="Students Adaptability Level in Online Education", layout="wide")
-st.write("Versi scikit-learn:", sklearn.__version__)
 
 
 st.write("""
-# Adaptability Prediction in Online Education Dashboarda
+# Adaptability Prediction in Online Education Dashboard
 
 This dashboard created by : [@fitrirachmawati](https://www.linkedin.com/in/fitrirachmawati1004/)
          
