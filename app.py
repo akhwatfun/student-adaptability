@@ -131,7 +131,7 @@ def run():
                 st.error(f"Prediction of this app is {output}", icon="🚨")
             else:
                 st.balloons()
-                st.error(f"Prediction of this app is {output}", icon="✅")
+                st.success(f"Prediction of this app is {output}", icon="✅")
 
 if __name__ == "__main__" :
    run()
