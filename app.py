@@ -87,8 +87,7 @@ def run():
 
     # Sidebar inputs
     st.sidebar.header('Input Features')
-    uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
-
+   
   
     input_df = user_input_features()
  
