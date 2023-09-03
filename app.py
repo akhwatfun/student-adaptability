@@ -89,10 +89,9 @@ def run():
     st.sidebar.header('Input Features')
     uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
 
-    if uploaded_file is None:
-        input_df = user_input_features()
-    else:
-        input_df = pd.read_csv(uploaded_file)
+  
+    input_df = user_input_features()
+ 
 
     st.image("online-school.png", width=500)
     st.write('User Inputs:')
