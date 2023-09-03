@@ -127,7 +127,7 @@ def run():
         output = str(result[0])
         with st.spinner('Wait for it...'):
             time.sleep(4)
-            if output == 0:
+            if prediction == 0:
                 st.error(f"Prediction of this app is {output}", icon="🚨")
             else:
                 st.balloons()
