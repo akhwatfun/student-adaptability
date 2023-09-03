@@ -22,7 +22,6 @@ self_lms_dict = {0: 'No', 1: 'Yes'}
 device_dict = {1: 'Tab', 2: 'Mobile', 3: 'Computer'}
 
 def user_input_features():
-    st.sidebar.header('Input Manual')
     gender = st.sidebar.selectbox('Gender', ['Boy', 'Girl'])
     age = st.sidebar.selectbox('Age', ['1-5', '6-10', '11-15', '16-20', '21-25', '26-30'])
     education_level = st.sidebar.selectbox('Education Level', ['School', 'College', 'University'])
